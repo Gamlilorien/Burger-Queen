@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="public/assets/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/assets/css/style.css" type="text/css">
+    <style>
+        body {
+            background-image: url("public/assets/images/white-siding3.jpeg");
+            background-repeat: repeat;
+            background-color: #cccccc;
+        }
+    </style>
+
+
+    <title>Burger Queen</title>
+</head>
+<body>
+
+    <!-- We need a 6 row single column layout, preferably centered -->
+    <!-- Tiled image background? -->
+<div class="mainContent">
+
+    <!-- LOGO -->
+    <div id="logo" class="">
+        <img src="public/assets/images/burger queen.png" height="200px" class="myCenter">
+    </div>
+
+    <!-- TITLE -->
+    <div id="Title" class="col-sm-6 myCenter myPadding">
+        <h1>Order Tracker</h1>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 rowHeader">
+                <h3>Placed Orders:</h3>
+            </div>
+
+            <div class="col-md-4">
+            </div>
+
+            <div class="col-md-4 rowHeader">
+                <h3>Completed Orders</h3>
+            </div>
+    </div>
+
+
+    <!-- PLACED ORDERS / COMPLETED ORDERS -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 myPadding placedOrders">
+                <h2>Random #:</h2>
+                <h2 id="targetNumber">39</h2>
+            </div>
+
+            <div id="scoreboard" class="col-md-4 myPadding">
+                <h3>Wins: <span id="wins">0</span></h3>
+                <h3>Losses: <span id="losses">0</span></h3>
+            </div>
+
+            <div class="col-md-4 myPadding completedOrders">
+                <h2>Your score:</h2>
+                <h2 id="totalScore">0</h2>
+            </div>
+    </div>
+
+
+
+
+</div>
+    
+<!-- JavaScript link -->
+    <script src="" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+div {
+    margin: 1rem 0 1rem 0;
+}
+
+div.myPadding {
+    padding: 10px 10px 10px 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 12px;
+}
+
+.mainContent {
+    display: block;
+    width: 70%;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+#title {
+    background-color: #578c1c;
+    color: white;
+}
+
+#instructions {
+    background-color: #FAE6CE;
+    color: green;
+}
+
+.placedOrders {
+    background-color: #5ABB7C;
+    font-size: 1.5rem;
+}
+
+#scoreboard {
+    background-color: #56FDFB;
+}
+
+.completedOrders {
+    background-color: #2B897D;
+}
+
+.myCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.rowHeader {
+    text-align: center;
+}
