@@ -1,0 +1,26 @@
+{
+  "name": "Burger-Queen",
+  "version": "1.0.0",
+  "description": "# Node Express Handlebars",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gamlilorien/Burger-Queen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gamlilorien/Burger-Queen/issues"
+  },
+  "homepage": "https://github.com/Gamlilorien/Burger-Queen#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
+  }
+}
