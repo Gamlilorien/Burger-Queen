@@ -1,1 +1,46 @@
-<h1>hello world...</h1>
+<!-- Tiled image background -->
+<div class="mainContent">
+
+    <!-- LOGO -->
+    <div id="logo" class="">
+        <img src="/assets/images/burger queen.png" height="200px" class="myCenter">
+    </div>
+
+    <!-- TITLE -->
+    <div id="Title" class="col-sm-6 myCenter myPadding">
+        <h1>Order Tracker</h1>
+        <form>
+            <div class="form-group">
+              <label for="newOrder">Place New Order</label>
+              <input type="text" class="form-control" id="newOrder">
+            </div>
+            <button type="submit" class="btn btn-danger" id="create-order">Order!</button>
+        </form>
+    </div>
+
+
+    <!-- PLACED ORDERS / COMPLETED ORDERS -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 myPadding chalkboard">
+                <h3><u>Placed Orders</u></h3>
+                <ul>
+                    <!-- HANDLEBARS VARIABLES -->
+                    <ul>
+                        {{#each burgers}}
+                        <li>{{this.burger_name}}</li>
+                        {{/each}}
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="col-lg-6 myPadding chalkboard">
+                <h3><u>Completed Orders</u></h3>
+                
+            </div>
+    </div>
+
+
+
+
+</div>

@@ -9,13 +9,17 @@ var burger = require("../models/burger.js");
 
         //#1 Home (ie show all)
         router.get("/", function(req, res) {
-            burger.all(function(data) {
-                var hbsObject = {
-                    burger_name: data
-                };
-                console.log(hbsObject);
-                res.render("index", hbsObject);
-            })
+            burger.all(
+                function(data) {
+                    var hbsObject = {
+                        burgers: data
+                    };
+                    //console.log(hbsObject);
+                    //now send results to Handlebars template
+                    res.render("index", hbsObject);
+                }
+            )
+            
         });
   
  
