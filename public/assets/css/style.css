@@ -13,7 +13,7 @@ div.myPadding {
 
 .mainContent {
     display: block;
-    width: 70%;
+    width: 90%;
     margin: auto;
     padding-top: 2rem;
 }
@@ -28,17 +28,11 @@ div.myPadding {
     color: green;
 }
 
-.placedOrders {
-    background-color: #5ABB7C;
-    font-size: 1.5rem;
-}
-
-#scoreboard {
-    background-color: #56FDFB;
-}
-
-.completedOrders {
-    background-color: #2B897D;
+.chalkboard {
+    background-image: url("../images/black-chalkboard.jpg");
+    color: white;
+    font-family: chalkduster;
+    font-size: 1rem;
 }
 
 .myCenter {
@@ -50,4 +44,8 @@ div.myPadding {
 
 .rowHeader {
     text-align: center;
+}
+
+form {
+    text-align: left;
 }
