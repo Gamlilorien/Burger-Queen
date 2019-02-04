@@ -29,7 +29,9 @@ var burger = require("../models/burger.js");
             burger.create([
                 "burger_name", "devoured"
             ], [
-                req.burger_name, 0
+                //req.body.burger_name or any combination there of doesn't work
+                //updated to use fixed value for now...
+                "A new burger", 0
             ], function(result) {
                 //now that the burger has been created, send back the ID
                 res.json({id: result.insertId});
