@@ -7,16 +7,17 @@ var burger = {
             cb(res);
         });
     },
-    create: function(text_input, cb) {
+    create: function(cols, vals, cb) {
         // Add a new item to the burgers table from user input.
-        orm.insertOne("burgers", text_input, function(res) {
+        orm.insertOne("burgers", cols, vals, function(res) {
             cb(res);
         });
     },
     update: function(id, cb) {
         // Set existing burger to devoured!
         orm.updateOne("burgers", id, function(res) {
-            cb(res);
+            //cb(res);
+            console.log("why?")
         });
     }
 

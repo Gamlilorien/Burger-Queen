@@ -9,12 +9,12 @@
     <!-- TITLE -->
     <div id="Title" class="col-sm-6 myCenter myPadding">
         <h1>Order Tracker</h1>
-        <form>
+        <form class="create-order">
             <div class="form-group">
               <label for="newOrder">Place New Order</label>
               <input type="text" class="form-control" id="newOrder">
             </div>
-            <button type="submit" class="btn btn-danger" id="create-order">Order!</button>
+            <button type="submit" class="btn btn-danger">Order!</button>
         </form>
     </div>
 
@@ -29,6 +29,7 @@
                     <ul>
                         {{#each burgers}}
                         <li>{{this.burger_name}}</li>
+                        <a data-id="{{id}}" class="btn btn-danger btn-sm btn-complete" data-devoured="{{devoured}}" role="button">Complete</a>
                         {{/each}}
                     </ul>
                 </ul>

@@ -25,21 +25,23 @@ var burger = require("../models/burger.js");
  
         //#2 Add
         router.post("/api/burger", function(req, res) {
+            console.log(req.body);
             burger.create([
-                "burger_name"
+                "burger_name", "devoured"
             ], [
-                req.body.burger_name
+                req.burger_name, 0
             ], function(result) {
                 //now that the burger has been created, send back the ID
-                res.json({id: resultinsertId});
+                res.json({id: result.insertId});
             })
         });
 
-        //#3 Update
+        //#3 Update - try as a post not a put?
         router.put("/api/burger/:id", function(req, res) {
             var condition = "id = " + req.params.id;
 
             console.log("condition", condition);
+            console.log(req.body);
 
             burger.update({
                 devoured: req.body.devoured

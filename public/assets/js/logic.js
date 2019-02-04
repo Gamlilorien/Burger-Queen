@@ -1,7 +1,8 @@
+
 //Encapsulate all in a function to prevent from triggering on page load
 $(function() {
     //Devour Status
-    $(".set-devour").on("click", function(event) {
+    $(".btn-complete").on("click", function(event) {
         var id = $(this).data("id");
         var status = $(this).data("devoured");
         if (status === 0) {
@@ -32,10 +33,11 @@ $(function() {
         event.preventDefault();
 
         var newOrder = {
-            burger_name: $(".newOrder").val().trim(),
+            burger_name: $("#newOrder").val().trim(),
             devoured: 0
         };
-
+        
+        console.log(newOrder);
         //now send to the database
         $.ajax("/api/burger", {
             type: "POST",
@@ -46,8 +48,6 @@ $(function() {
                 //now reload the page to view new order
                 location.reload();
 
-                //now clear the form data
-                $(".newOrder").val("");
             }
         )
     });

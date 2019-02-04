@@ -49,3 +49,8 @@ div.myPadding {
 form {
     text-align: left;
 }
+
+.btn-complete {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
